@@ -1,0 +1,51 @@
+("COVID-19" [Supplementary Concept] or 
+"covid-19*"[tiab] or 
+"covid19*"[tiab] or 
+"sars-cov2*"[tiab] OR 
+"2019-nCoV"[tiab] OR 
+((novel*[tiab] OR 2019[tiab]) AND ("Coronavirus Infections"[Mesh] OR Coronavirus*[tiab] OR "Corona-virus*"[tiab] OR (Corona*[tiab] and virus*[tiab]))) OR 
+"SARS Virus"[Mesh] OR
+"Severe Acute Respiratory Syndrome*"[tiab] OR 
+"SARS-CoV"[tiab] OR 
+SARS*[tiab] OR
+"Middle East Respiratory Syndrome Coronavirus"[Mesh] OR
+"Middle East Respiratory Syndrome"[tiab] OR
+"MERS-CoV*"[tiab] OR 
+MERS*[tiab])
+AND
+("arbidol" [Supplementary Concept] OR arbidol*[tiab] OR Umifenovir*[tiab] OR
+"Azithromycin"[Mesh] OR Azithromycin*[tiab] OR
+"baloxavir" [Supplementary Concept] OR baloxavir*[tiab] or
+"baricitinib" [Supplementary Concept] OR baricitinib*[tiab] OR
+"Bevacizumab"[Mesh] OR Bevacizumab[tiab] OR
+"Chloroquine"[Mesh] OR Chloroquine*[tiab] OR 
+"Darunavir"[Mesh] OR Darunavir*[tiab] OR "Cobicistat"[Mesh] OR Cobicistat*[tiab] OR
+"Emtricitabine, Tenofovir Disoproxil Fumarate Drug Combination"[Mesh] OR  "Emtricitabine"[Mesh] OR Emtricitabine*[tiab] or Tenofovir*[tiab] OR
+"enisamium" [Supplementary Concept] OR enisamium*[tiab] or
+"favipiravir" [Supplementary Concept] OR favipiravir[tiab] OR
+"Fingolimod Hydrochloride"[Mesh] OR Fingolimod*[tiab] OR
+"Ganciclovir"[Mesh] OR Ganciclovir*[tiab] OR
+"Hydroxychloroquine"[Mesh] OR Hydroxychloroquine*[tiab] OR " Hydroxy-chloroquine*[tiab]"
+"Lopinavir"[Mesh] OR "lopinavir-ritonavir drug combination" [Supplementary Concept] OR Lopinavir*[tiab] OR 
+"Mycophenolic Acid"[Mesh] OR "Mycophenolic Acid"[tiab] OR "mycophenolate"[tiab] OR (Mycophenol*[tiab] AND Acid [tiab]) OR (Mycophenol*[tiab] AND Mofetil*[tiab]) OR (Mofetil[tiab] and Hydrochlorid*[tiab]) OR
+"Nelfinavir"[Mesh] OR Nelfinavir*[tiab] OR
+"Niclosamide"[Mesh] OR Niclosamide*[tiab] OR
+"nitazoxanide" [Supplementary Concept] OR nitazoxanide*[tiab] OR
+"Novaferon" [Supplementary Concept] OR Novaferon*[tiab] OR
+"Oseltamivir"[Mesh] OR Oseltamivir*[tiab] OR
+"pirfenidone" [Supplementary Concept] OR pirfenidone*[tiab] OR
+"Quercetin"[Mesh] OR Quercetin*[tiab] OR
+"remdesivir" [Supplementary Concept] OR remdesivir*[tiab] or 
+"Ribavirin"[Mesh] OR Ribavirin*[tiab] OR 
+"INCB018424" [Supplementary Concept] OR Ruxolitinib*[tiab] OR
+"Sirolimus"[Mesh] OR Sirolimus*[tiab] OR
+"Sofosbuvir"[Mesh] OR Sofosbuvir*[tiab] OR 
+"Thymalfasin"[Mesh] OR  "thymosin alpha(1) (24-28)" [Supplementary Concept] OR Thymalfasin*[tiab] OR
+"triazavirin" [Supplementary Concept] OR triazavirin*[tiab] OR
+"tocilizumab" [Supplementary Concept] OR tocilizumab*[tiab] OR
+"Steroids"[Mesh] or steroid*[tiab] or corticosteroid*[tiab] or "cortico-steroid*"[tiab] or "Hydrocortisone"[Mesh] or Hydrocort*[tiab] OR "Cortisone"[Mesh]  OR Cortis*[Mesh] OR "Prednisone"[Mesh] OR  "prednisone sodium succinate" [Supplementary Concept] OR Prednis*[tiab] OR "Prednisolone"[Mesh] "Methylprednisolone"[Mesh] OR "Methylprednisolone Acetate"[Mesh] OR  "Methylprednisolone Hemisuccinate"[Mesh] OR Methylpred*[tiab] or "Methyl-pred*"[tiab] or "Dexamethasone"[Mesh] OR  "Dexamethasone Isonicotinate"[Mesh] OR dexameth*[tiab] or "Fludrocortisone"[Mesh] OR "fludrocortisone acetate" [Supplementary Concept] OR fludrocort*[tiab] OR
+"Interferon-alpha"[Mesh] OR "Interferon alpha-2"[Mesh] OR "Receptor, Interferon alpha-beta"[Mesh] or "interferon-alpha*"[tiab] or (interferon*[tiab] and alpha[tiab]) OR "interferon alfacon-1" [Supplementary Concept] OR (interferon*[tiab] AND ("alfacon-1"[tiab] OR alfacon*[tiab])) OR
+"Interferon-beta"[Mesh] OR "Interferon beta-1b"[Mesh] OR  "Interferon beta-1a"[Mesh] OR "interferon-beta*"[tiab] or (interferon*[tiab] and beta[tiab]) OR 
+"Interferon-gamma"[Mesh] OR "interferon-gamma*"[tiab] or (interferon*[tiab] and gamma[tiab]) OR
+"Atorvastatin Calcium"[Mesh] OR "atorvastatin*"[tw] OR "Rosuvastatin Calcium"[Mesh] OR "rosuvastatin*"[tw] OR "Simvastatin"[Mesh] OR "simvastatin acid" [Supplementary Concept] OR "simvastatin*"[tw] OR "Pravastatin"[Mesh] OR  "Pravastatin*"[tw] OR "fluvastatin"[Supplementary Concept] OR "fluvastatin*"[tw] OR "fluindostatin*"[tw] OR
+"Lovastatin"[Mesh] OR "Lovastatin*"[tw] OR "mevinolin*"[tw] OR "pitavastatin"[Supplementary Concept] OR "pitavastatin*"[tw] OR "statin*")
