@@ -9,7 +9,7 @@ def main():
     if not os.path.exists("./Data/deduped_data.csv"):
         print("-----deduplicating data-----")
         subprocess.Popen(["./Data/dedup_data.bash", "./Data/metadata.csv"])
-        print("deduped_data.csv is created")
+        print("deduped_data.csv has been created")
 
     article_df = pd.read_csv("./Data/deduped_data.csv")
     print(article_df)
