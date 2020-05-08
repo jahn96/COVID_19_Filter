@@ -2,7 +2,7 @@
 
 csv_file="$1"
 
-head -n 1 "$csv_file" > "./deduped_data.csv"
+head -n 1 "$csv_file" > "./Data/deduped_data.csv"
 
 # remove header
 data="$(tail -n+2 $csv_file)" 
@@ -27,7 +27,7 @@ while read -r p; do
 done 
 
 # remove , inside the quotes and dedup by doi if it has doi else it will dedup by title 
-awk -F '"' -v OFS='' '{ for (i=2; i <=NF; i+=2) gsub(",", "", $i) } 1' "temp.csv" | awk -F ',' '{if(($5 != "") && (! doi_seen[$5])){print $0; doi_seen[$5]++} else if(($5 == "") && (! title_seen[$4])){print $0; title_seen[$4]++}}' >> "./deduped_data.csv"
+awk -F '"' -v OFS='' '{ for (i=2; i <=NF; i+=2) gsub(",", "", $i) } 1' "temp.csv" | awk -F ',' '{if(($5 != "") && (! doi_seen[$5])){print $0; doi_seen[$5]++} else if(($5 == "") && (! title_seen[$4])){print $0; title_seen[$4]++}}' >> "./Data/deduped_data.csv"
 
 # remove temp.csv
 rm temp.csv 
