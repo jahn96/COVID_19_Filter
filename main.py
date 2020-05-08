@@ -6,7 +6,6 @@ from Data.generate_xml import generate_xml
 
 
 def main():
-    # doesn't write to a file
     if not os.path.exists("./Data/deduped_data.csv"):
         print("-----deduplicating data-----")
         subprocess.Popen(["./Data/dedup_data.bash", "./Data/metadata.csv"])
