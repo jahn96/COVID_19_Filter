@@ -1,3 +1,4 @@
+import subprocess
 import os
 import pandas as pd
 from Data.filter_article import filter_article
@@ -5,8 +6,11 @@ from Data.generate_xml import generate_xml
 
 
 def main():
+    # doesn't write to a file
     if not os.path.exists("./Data/deduped_data.csv"):
-        os.system("./Data/dedup_data.bash ./Data/metadata.csv")
+        print("-----deduplicating data-----")
+        subprocess.Popen(["./Data/dedup_data.bash", "./Data/metadata.csv"])
+        print("deduped_data.csv is created")
 
     article_df = pd.read_csv("./Data/deduped_data.csv")
     print(article_df)
