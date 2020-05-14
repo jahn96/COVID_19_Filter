@@ -133,60 +133,43 @@ final_keywords = keywords.apply(lambda x : x.upper()).drop_duplicates()
 
 final_keywords
 
-titles = cleaned_data.title
-
-split_titles = titles.apply(lambda x : str(x).upper().split())
-
-titles
-split_titles
+big_regex = r""
+for i in range(len(final_keywords)):
+    addition = ("[ ]?(" + final_keywords.iloc[i] + ")[ ]?|")
+    big_regex += addition
+big_regex = big_regex[:-1]
+big_regex
 
 start = time.time()
-titles = []
-for i in range(0, 5000):
-    for j in range(len(split_titles[i])):
-        if final_keywords.isin([split_titles[i][j]]).any():
-            titles.append(i)
-            break
+values = cleaned_data["title"].str.contains(big_regex)
 time.time() - start
 
+values.dropna(inplace=True)
+values
+
+titles = values.index[values].tolist()
 titles
 
-df_test = cleaned_data.copy().head(5000)
+cleaned_data.loc[titles]
+
+df_test = cleaned_data.copy()
 df_test.drop(titles, inplace=True)
 df_test.reset_index(inplace=True)
 df_test
 
-abstracts = df_test["abstract"]
-
-split_abstracts = abstracts.apply(lambda x : str(x).upper().split())
-
-split_abstracts
-
 start = time.time()
-abstracts = []
-for i in range(0, 1000):
-    for j in range(len(split_abstracts[i])):
-        if final_keywords.isin([split_abstracts[i][j]]).any():
-            abstracts.append(i)
-            break
+values = df_test["abstract"].str.contains(big_regex)
 time.time() - start
 
+values.dropna(inplace=True)
+values
+
+abstracts = values.index[values].tolist()
 abstracts
+
+df_test.loc[abstracts]
 
 df = pd.concat([df_test.loc[abstracts], cleaned_data.loc[titles]],
                ignore_index=True)
 df.drop("index", axis=1, inplace=True)
 df
-
-# TRYING TO "VECTORIZE" THE SEARCHING SOMEHOW
-
-# def test_func(arg, alist, index):
-#   for i in range(len(arg)):
-#     if final_keywords.isin([arg[i]]).any():
-#       alist.append(index)
-#       break
-
-# start = time.time()
-# abstracts = []
-# split_abstracts.head(10).apply(lambda row: test_func, alist=abstracts, row.name)
-# time.time() - start
