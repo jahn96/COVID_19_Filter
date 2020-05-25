@@ -25,7 +25,7 @@ AND
 "favipiravir" [Supplementary Concept] OR favipiravir[tiab] OR
 "Fingolimod Hydrochloride"[Mesh] OR Fingolimod*[tiab] OR
 "Ganciclovir"[Mesh] OR Ganciclovir*[tiab] OR
-"Hydroxychloroquine"[Mesh] OR Hydroxychloroquine*[tiab] OR " Hydroxy-chloroquine*[tiab]"
+"Hydroxychloroquine"[Mesh] OR Hydroxychloroquine*[tiab] OR " Hydroxy-chloroquine*[tiab]" OR
 "Lopinavir"[Mesh] OR "lopinavir-ritonavir drug combination" [Supplementary Concept] OR Lopinavir*[tiab] OR 
 "Mycophenolic Acid"[Mesh] OR "Mycophenolic Acid"[tiab] OR "mycophenolate"[tiab] OR (Mycophenol*[tiab] AND Acid [tiab]) OR (Mycophenol*[tiab] AND Mofetil*[tiab]) OR (Mofetil[tiab] and Hydrochlorid*[tiab]) OR
 "Nelfinavir"[Mesh] OR Nelfinavir*[tiab] OR
