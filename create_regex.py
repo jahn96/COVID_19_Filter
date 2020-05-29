@@ -1,3 +1,6 @@
+import pandas as pd
+import re
+
 def remove_duplicate_term(terms):
   # remove star
   removed_star = re.sub(r'(\w)(\*)', r'\1', terms)
